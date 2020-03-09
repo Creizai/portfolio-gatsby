@@ -4,8 +4,6 @@ import React from "react"
 import styled from "styled-components"
 
 const Nav = styled.header`
-  max-width: 960px;
-  margin: 0 auto;
   background: #1e1e1e;
   text-align: center;
   display: flex;
@@ -13,18 +11,19 @@ const Nav = styled.header`
   justify-content: center;
 
   @media only screen and (min-width: 768px) {
-    display: flex;
-    justify-content: flex-space-between;
+    height: 80px;
   }
 `
 
 const Title = styled.div`
   font-family: "Anton", sans-serif;
-  font-size: 36px;
   display: none;
 
   @media only screen and (min-width: 768px) {
+    margin: 0 1rem;
+    width: 100%;
     display: flex;
+    justify-content: flex-start;
   }
 `
 const NavLinks = styled.div`
@@ -32,33 +31,44 @@ const NavLinks = styled.div`
   flex-direction: column;
 
   @media only screen and (min-width: 768px) {
+    margin: 0 1rem;
+    width: 100%;
     flex-direction: row;
+    justify-content: flex-end;
   }
+`
+
+const TitleLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 36px;
+  transition: all 0.3s ease 0s;
+  padding: 3px 5px;
 `
 
 const StyledLink = styled(Link)`
   font-family: "Anton", sans-serif;
   font-size: 24px;
   text-decoration: none;
-  margin: 0 auto;
   color: white;
   padding: 3px 0;
   background-color: #1e1e1e;
   transition: all 0.3s ease 0s;
 
   &:hover {
-    color: blue;
+    background-color: blue;
   }
 
   @media only screen and (min-width: 768px) {
-    justify-content: space-evenly;
+    padding: 3px 5px;
   }
 `
 
 const Header = ({ siteTitle }) => (
   <Nav>
     <Title>
-      <StyledLink to="/">Adam Bates</StyledLink>
+      <TitleLink to="/">ADAM BATES</TitleLink>
       {/* put this in the above link{siteTitle} */}
     </Title>
     <NavLinks>
