@@ -4,6 +4,8 @@ import React from "react"
 import styled from "styled-components"
 
 const Nav = styled.header`
+  width: 100vw;
+  position: fixed;
   background: #1e1e1e;
   text-align: center;
   display: flex;

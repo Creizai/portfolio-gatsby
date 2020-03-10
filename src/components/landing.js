@@ -3,27 +3,52 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-const LandingContainer = styled.header`
+const LandingContainer = styled.div`
+  height: 100vh;
+  margin: 0 auto;
   background: #000000;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
+
+  h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 29px;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #9f9f9f;
+  }
 
   @media only screen and (min-width: 768px) {
-    height: 80px;
+    h1 {
+      font-size: 76px;
+    }
+    p {
+      font-size: 24px;
+    }
   }
 `
-const LandingContainer = styled.header`
-  height: 408px;
-  width: 408px;
+const Picture = styled.image`
+  height: 140px;
+  width: 140px;
   background-color: white;
+  border-radius: 50%;
+
+  @media only screen and (min-width: 768px) {
+    height: 408px;
+    width: 408px;
+  }
 `
 
 const Landing = ({ siteTitle }) => (
   <LandingContainer>
     <h1>Hey, I'm Adam!</h1>
-    <p></p>
+    <p>Jr Software Developer</p>
     <Picture></Picture>
   </LandingContainer>
 )
