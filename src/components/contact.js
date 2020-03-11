@@ -15,12 +15,14 @@ const ContactContainer = styled.div`
   color: white;
 
   h1 {
+    /* display: inline-block; */
     font-family: "Anton", sans-serif;
     font-size: 30px;
   }
-  p {
+  h2 {
+    /* display: inline-block; */
     font-family: "Montserrat", sans-serif;
-    font-size: 9px;
+    font-size: 14px;
     color: #9f9f9f;
   }
 
@@ -28,13 +30,20 @@ const ContactContainer = styled.div`
     h1 {
       font-size: 76px;
     }
-    p {
+    h2 {
       font-size: 16px;
     }
   }
 `
-const ContactCard = styled.div``
+const ContactCard = styled.div`
+  width: 40vw;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
 const Icon = styled.div`
+  /* display: inline-block; */
   background-color: white;
   width: 40px;
   height: 40px;
@@ -50,8 +59,12 @@ const Contact = ({ siteTitle }) => (
     <ContactCard>
       <Icon />
       <h2>LINKEDIN</h2>
+    </ContactCard>
+    <ContactCard>
       <Icon />
       <h2>GITHUB</h2>
+    </ContactCard>
+    <ContactCard>
       <Icon />
       <h2>EMAIL</h2>
     </ContactCard>

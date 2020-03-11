@@ -13,6 +13,7 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
+  border-bottom: 1px white solid;
 
   h1 {
     font-family: "Anton", sans-serif;

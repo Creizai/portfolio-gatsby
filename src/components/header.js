@@ -22,7 +22,7 @@ const Title = styled.div`
   display: none;
 
   @media only screen and (min-width: 768px) {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -33,7 +33,7 @@ const NavLinks = styled.div`
   flex-direction: column;
 
   @media only screen and (min-width: 768px) {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     width: 100%;
     flex-direction: row;
     justify-content: flex-end;
@@ -43,7 +43,7 @@ const NavLinks = styled.div`
 const TitleLink = styled(Link)`
   text-decoration: none;
   color: white;
-  font-family: "Anton", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   transition: all 0.3s ease 0s;
   padding: 3px 5px;
