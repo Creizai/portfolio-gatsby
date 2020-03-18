@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import Trivia from "../images/trivia.png"
 
 const PortfolioContainer = styled.div`
   height: 100vh;
@@ -40,7 +41,7 @@ const ProjectContainer = styled.div`
   margin: 5px;
 `
 
-const Picture = styled.image`
+const Picture = styled.img`
   display: hidden;
   height: 139px;
   width: 278px;
@@ -59,7 +60,9 @@ const Portfolio = ({ siteTitle }) => (
   <PortfolioContainer id="Portfolio">
     <ProjectContainer>
       <h1>Trivia</h1>
-      <Picture></Picture>
+      <a href="https://creizai.github.io/Firefly-Trivia/">
+        <Picture src={Trivia} />
+      </a>
       <p>HTML, JavaScript, CSS</p>
     </ProjectContainer>
     {/* <ProjectContainer>
