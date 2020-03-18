@@ -1,7 +1,13 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+
+import { Linkedin } from "@styled-icons/fa-brands/Linkedin"
+
+const WhiteLinkedIn = styled(Linkedin)`
+  color: white;
+  background-color: white;
+`
 
 const ContactContainer = styled.div`
   height: 100vh;
@@ -18,20 +24,31 @@ const ContactContainer = styled.div`
     /* display: inline-block; */
     font-family: "Anton", sans-serif;
     font-size: 30px;
+    text-align: center;
   }
-  h2 {
+  a {
     /* display: inline-block; */
     font-family: "Montserrat", sans-serif;
+    text-decoration: none;
     font-size: 14px;
     color: #9f9f9f;
+    text-align: center;
+    padding: 3px;
+    background-color: #000000;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: white;
+      background-color: #1e1e1e;
+    }
   }
 
   @media only screen and (min-width: 768px) {
     h1 {
       font-size: 76px;
     }
-    h2 {
-      font-size: 16px;
+    a {
+      font-size: 32px;
     }
   }
 `
@@ -40,8 +57,9 @@ const ContactCard = styled.div`
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `
+
 const Icon = styled.div`
   /* display: inline-block; */
   background-color: white;
@@ -54,19 +72,16 @@ const Icon = styled.div`
 `
 
 const Contact = ({ siteTitle }) => (
-  <ContactContainer>
+  <ContactContainer id="Contact">
     <h1>CONTACT ME</h1>
     <ContactCard>
-      <Icon />
-      <h2>LINKEDIN</h2>
+      <a href="https://www.linkedin.com/in/adam-bates-794955198/">LINKEDIN</a>
     </ContactCard>
     <ContactCard>
-      <Icon />
-      <h2>GITHUB</h2>
+      <a href="https://github.com/Creizai">GITHUB</a>
     </ContactCard>
     <ContactCard>
-      <Icon />
-      <h2>EMAIL</h2>
+      <a href="mailto: 175bates@gmail.com">EMAIL</a>
     </ContactCard>
   </ContactContainer>
 )

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -20,6 +19,7 @@ const AboutContainer = styled.div`
     font-size: 32px;
   }
   p {
+    width: 80%;
     font-family: "Montserrat", sans-serif;
     font-size: 9px;
     color: #9f9f9f;
@@ -36,7 +36,7 @@ const AboutContainer = styled.div`
 `
 
 const About = ({ siteTitle }) => (
-  <AboutContainer>
+  <AboutContainer id="About">
     <h1>About</h1>
     <p>
       I'm a jr software developer based in Washington, DC. I got into

@@ -67,6 +67,24 @@ const StyledLink = styled(Link)`
   }
 `
 
+const StyledA = styled.a`
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 3px 0;
+  background-color: #1e1e1e;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: grey;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 3px 5px;
+  }
+`
+
 const Header = ({ siteTitle }) => (
   <Nav>
     <Title>
@@ -74,10 +92,10 @@ const Header = ({ siteTitle }) => (
       {/* put this in the above link{siteTitle} */}
     </Title>
     <NavLinks>
-      <StyledLink to="/">About</StyledLink>
-      <StyledLink to="/">Portfolio</StyledLink>
-      <StyledLink to="/">Resume</StyledLink>
-      <StyledLink to="/">Contact</StyledLink>
+      <StyledA href="#About">About</StyledA>
+      <StyledA href="#Portfolio">Portfolio</StyledA>
+      <StyledA href="https://tinyurl.com/wg5chft">Resume</StyledA>
+      <StyledA href="#Contact">Contact</StyledA>
     </NavLinks>
   </Nav>
 )
