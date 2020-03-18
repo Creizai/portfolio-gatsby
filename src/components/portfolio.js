@@ -15,7 +15,9 @@ const PortfolioContainer = styled.div`
   color: white;
   border-bottom: 1px solid white;
 
-  h1 {
+  a {
+    color: white;
+    text-decoration: none;
     font-family: "Anton", sans-serif;
     font-size: 32px;
   }
@@ -28,7 +30,7 @@ const PortfolioContainer = styled.div`
   @media only screen and (min-width: 1080px) {
     flex-direction: row;
     margin: 0 auto;
-    h1 {
+    a {
       font-size: 32px;
     }
     p {
@@ -59,14 +61,14 @@ const Picture = styled.img`
 const Portfolio = ({ siteTitle }) => (
   <PortfolioContainer id="Portfolio">
     <ProjectContainer>
-      <h1>Trivia</h1>
       <a href="https://creizai.github.io/Firefly-Trivia/">
+        Trivia
         <Picture src={Trivia} />
       </a>
       <p>HTML, JavaScript, CSS</p>
     </ProjectContainer>
     <ProjectContainer>
-      <h1>Check Back Daily</h1>
+      <a>Check Back Daily</a>
       <Picture></Picture>
       <p>Projects Will Be Added Soon</p>
     </ProjectContainer>
