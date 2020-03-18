@@ -16,6 +16,7 @@ const PortfolioContainer = styled.div`
   border-bottom: 1px solid white;
 
   a {
+    display: block;
     color: white;
     text-decoration: none;
     font-family: "Anton", sans-serif;
@@ -44,7 +45,8 @@ const ProjectContainer = styled.div`
 `
 
 const Picture = styled.img`
-  display: hidden;
+  /* position: absolute; */
+  display: none;
   height: 139px;
   width: 278px;
   background-color: darkgrey;
