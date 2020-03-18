@@ -45,7 +45,7 @@ const Picture = styled.img`
   display: hidden;
   height: 139px;
   width: 278px;
-  background-color: white;
+  background-color: darkgrey;
 
   @media only screen and (min-width: 768px) {
     display: block;
@@ -65,16 +65,16 @@ const Portfolio = ({ siteTitle }) => (
       </a>
       <p>HTML, JavaScript, CSS</p>
     </ProjectContainer>
-    {/* <ProjectContainer>
-      <h1>Hey, I'm Adam!</h1>
-      <Picture></Picture>
-      <p>Jr Software Developer</p>
-    </ProjectContainer>
     <ProjectContainer>
+      <h1>Check Back Daily</h1>
+      <Picture></Picture>
+      <p>Projects Will Be Added Soon</p>
+    </ProjectContainer>
+    {/* <ProjectContainer>
       <h1>Modern T</h1>
       <Picture></Picture>
       <p>Jr Software Developer</p>
-    </ProjectContainer> */}
+    </ProjectContainer>  */}
   </PortfolioContainer>
 )
 
