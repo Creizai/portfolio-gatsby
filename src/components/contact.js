@@ -1,13 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-
-import { Linkedin } from "@styled-icons/fa-brands/Linkedin"
-
-const WhiteLinkedIn = styled(Linkedin)`
-  color: white;
-  background-color: white;
-`
+import Icons from "./FAIcon"
 
 const ContactContainer = styled.div`
   height: 100vh;
@@ -60,28 +54,31 @@ const ContactCard = styled.div`
   justify-content: center;
 `
 
-const Icon = styled.div`
-  /* display: inline-block; */
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  @media only screen and (min-width: 768px) {
-    width: 100px;
-    height: 100px;
-  }
-`
-
 const Contact = ({ siteTitle }) => (
   <ContactContainer id="Contact">
     <h1>CONTACT ME</h1>
     <ContactCard>
-      <a href="https://www.linkedin.com/in/adam-bates-794955198/">LINKEDIN</a>
+      <a href="https://www.linkedin.com/in/adam-bates-794955198/">
+        <Icons name={["fab", "linkedin"]} size="5x" />
+        <br />
+        LINKEDIN
+      </a>
     </ContactCard>
+
     <ContactCard>
-      <a href="https://github.com/Creizai">GITHUB</a>
+      <a href="https://github.com/Creizai">
+        <Icons name={["fab", "github-square"]} size="5x" />
+        <br />
+        GITHUB
+      </a>
     </ContactCard>
+
     <ContactCard>
-      <a href="mailto: 175bates@gmail.com">EMAIL</a>
+      <a href="mailto: 175bates@gmail.com">
+        <Icons name={["fas", "envelope-square"]} size="5x" />
+        <br />
+        EMAIL
+      </a>
     </ContactCard>
   </ContactContainer>
 )
